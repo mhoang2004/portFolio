@@ -1,0 +1,9 @@
+$primary: #FFFF00;
+
+.menu {
+    // background: linear-gradient(to right, #e69b00, #f1ee8e);
+    background: linear-gradient(to left top, blue, red);
+}
+
+//IMPORT BOOTSTRAP
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
