@@ -1,10 +1,28 @@
 @use '../custom' as *;
+@use '../components/minxins' as *;
 
 .menu {
-    background: linear-gradient(to right, #e69b00, #ece75f);
+    @include gradient; //we must define @mixins function in somewhere
+
+    li {
+        padding: 0 0.7rem;
+        a {
+            color: $white !important; 
+            text-transform: capitalize;
+            font-weight: 600;
+        }
+
+    }
 }
 
 .logo-img {
     width: 60px;
     // padding: 0 10px;
+}
+
+.navbar-logo {
+    color: $white !important;
+    font-weight: 700;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
 }

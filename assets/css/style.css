@@ -10723,12 +10723,60 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.btn-rounded {
+  position: relative;
+  padding: 1rem 4.375rem 1rem 1.25rem;
+  font-weight: 700;
+  margin: 0;
+  border: 0.1rem solid rgba(255, 255, 255, 0.6);
+  background-color: #fff;
+}
+@media (max-width: 575.98px) {
+  .btn-rounded {
+    display: none;
+  }
+}
+.btn-rounded span {
+  position: absolute;
+  background-color: #e69e04;
+  width: 2.5rem;
+  height: 2.5rem;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+.btn-rounded span i {
+  color: #fff !important;
+  font-size: 1rem;
+  line-height: 2.5rem;
+}
+.btn-rounded:hover {
+  background: linear-gradient(to right, #e69b00, #ece75f);
+  color: #fff;
+}
+
 .menu {
   background: linear-gradient(to right, #e69b00, #ece75f);
+}
+.menu li {
+  padding: 0 0.7rem;
+}
+.menu li a {
+  color: #fff !important;
+  text-transform: capitalize;
+  font-weight: 600;
 }
 
 .logo-img {
   width: 60px;
+}
+
+.navbar-logo {
+  color: #fff !important;
+  font-weight: 700;
+  font-size: 1.7rem;
+  letter-spacing: 2px;
 }
 
 /*# sourceMappingURL=style.css.map */

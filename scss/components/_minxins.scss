@@ -1,0 +1,7 @@
+@use '../custom' as *;
+
+//we will use so many time => reuse
+//GRADIENT MIXIN
+@mixin gradient {
+    background: linear-gradient(to right, #e69b00, #ece75f);
+}
