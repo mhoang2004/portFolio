@@ -12,16 +12,18 @@
     />
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,600;1,800&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- //////////////////////////////////////////////////////////////////////// -->
     <!-- //////////////////////    START THE NAVBAR SECTION    ////////////////// -->
     <!-- //////////////////////////////////////////////////////////////////////// -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark menu">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark menu shadow fixed-tops">
       <div class="container">
         <a class="navbar-brand navbar-logo" href="#">
-          <img class="logo-img" src="./assets/img/LOGO.png" alt="logo image" />
-          <!-- Minh Hoang -->
+          <img class="logo-img" src="./assets/img/text-3d-resources-white-letter-h-png-clipart.jpg" alt="logo image"/>
+          <span class="logo-font">Henry</span>
         </a>
         <!-- responsive -->
         <button
@@ -56,6 +58,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Portfolio</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
             <!-- <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -80,7 +85,7 @@
             </li> -->
           </ul>
 
-          <button type="button" class="rounded-pill btn-rounded">+84 568471677
+          <button type="button" class="rounded-pill btn-rounded">+84 568471577
             <span>
                 <i class="fa-solid fa-phone"></i>
             </span>
@@ -99,9 +104,60 @@
         </div>
       </div>
     </nav>
+    
     <!-- //////////////////////////////////////////////////////////////////////// -->
-    <!-- //////////////////////    END THE NAVBAR SECTION    ////////////////// -->
+    <!-- //////////////////////    START THE INTRO SECTION    ////////////////// -->
     <!-- //////////////////////////////////////////////////////////////////////// -->
+    <section id="home" class="intro-section">
+      <div class="container">
+        <div class="row align-items-center text-white">
+          <!-- START THE CONTENT FOR THE INTRO -->
+          <div class="col-md-6 intros">
+            <h1 class="display-2">
+                <span class="display-2--intro">Hey!, I'm Henry</span>
+                <span class="display-2--description lh-base"> <!-- lh: line-height -->
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat id, maxime quia iusto dolorum, 
+                  quibusdam harum, nisi voluptatum nobis doloremque minima? Magnam saepe debitis esse, quo omnis 
+                  qui sapiente deserunt!
+                </span>
+            </h1>
+            <button type="button" class="rounded-pill btn-rounded">Get In Touch
+              <span>
+                  <i class="fas fa-arrow-right"></i>
+              </span>
+            </button>
+          </div>
+
+          <!-- START THE VIDEO CONTENT -->
+          <div class="col-md-6 intros text-end">
+            <div class="video-box"> 
+              <img src="./assets/img/Coding _Monochromatic.png" alt="video illutration" class="img-fluid">
+              <a href="#">
+                <span>
+                  <i class="fas fa-play-circle"></i>
+                </span>
+                <span class="border-animation border-animation--border-1"></span>
+                <span class="border-animation border-animation--border-2"></span>
+              </a>
+            </div>
+            <div class="popup-video">
+              <span>&times;</span>
+              <video src="./assets/video/6779331431460598264.mp4" autoplay muted controls></video>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- the wave from `https://getwaves.io` -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#ffff" fill-opacity="1" d="M0,256L48,240C96,224,192,192,288,202.7C384,213,480,267,576,245.3C672,224,768,128,864,117.3C960,107,1056,181,1152,218.7C1248,256,1344,256,1392,256L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+      </svg>
+    </section>
+
+    <!-- //////////////////////////////////////////////////////////////////////// -->
+    <!-- //////////////////////    START THE COMPANIES SECTION    ////////////////// -->
+    <!-- //////////////////////////////////////////////////////////////////////// -->
+
 
     <!-- before doing anything type: npm run compile:sass -->
     <script
@@ -109,5 +165,6 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
